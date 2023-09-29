@@ -8,21 +8,16 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
+
     <form id="multiplication-form">
-      <div class="backdrop">
-        <label for="number-input">Gib eine Zahl ein:</label>
-      </div>
+        <label class="head-fixed" for="number-input">Gib eine Zahl ein:</label>
       <div class="distance-top">
         <input type="number" id="number-input" min="0" max="100" placeholder="Zahl"/>
         <input type="submit" value="Tabelle generieren" />
       </div>
     </form>
 
-    <table id="multiplication-table">
-      <tr>
-        <!-- <th>Multiplikation</th>
-        <th>Ergebnis</th> -->
-      </tr>
-    </table>
+    <!-- RESULT-TABLE -->
+    <table id="multiplication-table"></table>
   </body>
 </html>

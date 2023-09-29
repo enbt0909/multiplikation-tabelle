@@ -10,12 +10,25 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
-  background-color: #333;
   background: url(//source.unsplash.com/2000x2000?forrest);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
+}
+
+.head-fixed {
+  color: #fafafa;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 4.2rem;
 }
 .distance-top {
   display: flex;
@@ -32,26 +45,8 @@ body {
   justify-content: center;
   color: red;
   font-style: italic;
-  /* position: fixed;
-  top: 2rem;
-  left: 0;
-  right: 0;*/
 } 
-label {
-  color: #000;
-  padding-left: 2.4rem;
-}
-.backdrop {
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 input[type="submit"] {
   font-size: 2.4rem;
   width: 85vw;
