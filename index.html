@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" notranslate>
   <head>
     <title>Rechne - Mal</title>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
   </head>
-  <body notranslate>
+  <body>
 
     <form id="multiplication-form">
         <label class="head-fixed" for="number-input">
@@ -23,5 +23,10 @@
 
     <!-- RESULT-TABLE -->
     <table id="multiplication-table"></table>
+    <script>
+      if (typeof google !== 'undefined' && typeof google.translate !== 'undefined') {
+        google.translate.abort();
+      }
+    </script>
   </body>
 </html>
