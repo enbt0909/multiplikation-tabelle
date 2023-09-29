@@ -1,6 +1,10 @@
 const form = document.getElementById("multiplication-form");
 const table = document.getElementById("multiplication-table");
 
+if (typeof google !== 'undefined' && typeof google.translate !== 'undefined') {
+  google.translate.abort();
+}
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
