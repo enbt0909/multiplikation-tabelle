@@ -1,0 +1,42 @@
+:root {font-size: 62.5%;}
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        background-color: #333;
+      }
+      #number-input {width: 25vw;}
+      label {color: #fff;}
+      input[type="submit"] {padding: 2rem;}
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+      }
+      th, td {
+        border: .1rem solid #ddd;
+        padding: 1.2rem;
+        text-align: center;
+        color: green;
+        font-weight: 900;
+      }
+      th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      @media (max-width: 60rem) {
+        table {
+          font-size: 1.8rem;
+        }
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: #ddd;
+      }
