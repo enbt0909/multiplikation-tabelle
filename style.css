@@ -11,6 +11,16 @@ body {
   align-items: center;
   font-size: 1.8rem;
   background-color: #333;
+  background: url(//source.unsplash.com/2000x2000?forrest);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+.distance-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
 }
 #number-input {
   width: 15vw;
@@ -22,14 +32,29 @@ body {
   justify-content: center;
   color: red;
   font-style: italic;
-}
+  /* position: fixed;
+  top: 2rem;
+  left: 0;
+  right: 0;*/
+} 
 label {
-  color: #fff;
+  color: #000;
   padding-left: 2.4rem;
+}
+.backdrop {
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 input[type="submit"] {
   font-size: 2.4rem;
-  width: 100vw;
+  width: 85vw;
   height: 5vh;
   padding: 0 2rem;
   border: none;
@@ -38,13 +63,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
+  margin-top: 10rem;
 }
 th,
 td {
   border: 0.1rem solid #ddd;
   padding: 1.2rem;
   text-align: center;
-  color: green;
+  color: 111;
   font-weight: 900;
 }
 th {

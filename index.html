@@ -9,9 +9,13 @@
   </head>
   <body>
     <form id="multiplication-form">
-      <label for="number-input">Gib eine Zahl ein:</label>
-      <input type="number" id="number-input" min="0" max="1000" placeholder="1000"/>
-      <input type="submit" value="Tabelle generieren" />
+      <div class="backdrop">
+        <label for="number-input">Gib eine Zahl ein:</label>
+      </div>
+      <div class="distance-top">
+        <input type="number" id="number-input" min="0" max="100" placeholder="Zahl"/>
+        <input type="submit" value="Tabelle generieren" />
+      </div>
     </form>
 
     <table id="multiplication-table">

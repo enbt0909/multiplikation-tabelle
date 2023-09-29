@@ -7,10 +7,10 @@ const form = document.getElementById("multiplication-form");
         const input = document.getElementById("number-input").value;
         const number = Number(input);
 
-        if (!isNaN(number) && number <= 1000) {
+        if (!isNaN(number) && number <= 100) {
           table.innerHTML = "";
 
-          for (let i = 1; i <= 1000; i++) {
+          for (let i = 1; i <= 100; i++) {
             const row = document.createElement("tr");
             const cell1 = document.createElement("td");
             const cell2 = document.createElement("td");
