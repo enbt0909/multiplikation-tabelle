@@ -22,5 +22,7 @@ form.addEventListener("submit", function (event) {
       row.appendChild(cell2);
       table.appendChild(row);
     }
-  }
+  } else {
+    alert("Bitte geben Sie eine Zahl zwischen 1 und 100 ein.");
+}
 });
