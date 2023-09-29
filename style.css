@@ -1,14 +1,15 @@
 :root {
   font-size: 62.5%;
 }
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 1.8rem;
   background: url(//source.unsplash.com/2000x2000?forrest);
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@ body {
 
 .head-fixed {
   color: #fafafa;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,24 +51,23 @@ input[type="submit"] {
   font-size: 4.2rem;
   width: 85vw;
   border: none;
-  padding: 0;
 }
 
 input[type="submit"] {
   padding-right: 15vw;
 }
+
+p {margin: 0; padding: 1rem;}
 table {
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  margin-top: 10rem;
 }
 th,
 td {
   border: 0.1rem solid #ddd;
   padding: 1.2rem;
   text-align: center;
-  color: 111;
   font-weight: 900;
 }
 th {
